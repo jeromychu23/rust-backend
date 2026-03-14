@@ -16,8 +16,8 @@ impl Database {
         let client = Surreal::new::<Ws>("127.0.0.1:8000").await?;
         client
             .signin(Root {
-                username: "jeromychu23".to_string(),
-                password: "iversonchu23".to_string(),
+                username: "root".to_string(),
+                password: "root".to_string(),
             })
             .await?;
         client.use_ns("surreal").use_db("pizzas").await.unwrap();
