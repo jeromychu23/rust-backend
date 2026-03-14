@@ -6,6 +6,7 @@ use crate::db::Database;
 mod db;
 use crate::models::pizza::{BuyPizzaRequest, Pizza, UpdatePizzaURL};
 use validator::Validate;
+mod error;
 
 #[get("/pizzas")]
 async fn get_pizzas(db: Data<Database>) -> impl Responder {

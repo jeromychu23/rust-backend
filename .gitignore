@@ -1,1 +1,6 @@
 /target
+# Ignore the database and all its side-car files
+pizzashop.db
+pizzashop.db-journal
+pizzashop.db-wal
+pizzashop.db/LOCK

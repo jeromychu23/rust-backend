@@ -24,7 +24,7 @@ impl Database {
         Ok(Database {
             client,
             name_space: String::from("surreal"),
-            db_name: String::from("pizzaz"),
+            db_name: String::from("pizzas"),
         })
     }
 
